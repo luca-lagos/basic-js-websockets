@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple example websockets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section id="title">
+        <h1>Simple example websockets</h1>
+        <p>
+          It's my first websockets app prototype with JavaScript, specially to
+          practice to I hope to enjoy us :).
+        </p>
+      </section>
+      <section id="panel">
+        <div class="server">
+          <label for="response">Server response</label>
+          <textarea
+            id="response-panel"
+            name="response"
+            cols="30"
+            rows="10"
+            readonly
+          ></textarea>
+        </div>
+        <div class="user">
+          <form action="" id="form-message">
+            <label for="message">User messages</label>
+            <div class="message-input">
+              <input
+              type="text"
+              name="message"
+              placeholder="Write the message here"
+            />
+            <button type="submit" id="form-submit" disabled><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p></p>
+      <script src="https://kit.fontawesome.com/62fd337bbc.js" crossorigin="anonymous"></script>
+      <script src="js/app.js"></script>
+    </footer>
+  </body>
+</html>

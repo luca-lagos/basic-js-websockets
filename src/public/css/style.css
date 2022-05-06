@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-principal: #661141;
+    --color-alternative: #440027;
+    --color-light:#882d61;
+    --color-text: #111111; 
+    --color-text-light: #b2b2b2;
+}
+
+html, body, button, span, a{
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(30%);
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+}
+
+#title h1{
+    color: var(--color-principal);
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#title p{
+    color: var(--color-text);
+    font-weight: 15px;
+    font-style: italic;
+}
+
+#panel{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#panel .server{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+#panel .server label{
+    color: var(--color-light);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#panel .server textarea{
+    width: 500px;
+    border: 2px solid var(--color-alternative);
+    border-radius: 5px;
+    border-color: var(--color-text-light);
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    transition: .4s ease-in;
+}
+
+#panel .server textarea:focus{
+    border-color: var(--color-principal);
+}
+
+#panel .user{
+    margin-bottom: 15px;
+}
+
+#panel .user form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 500px;
+}
+
+#panel .user form label{
+    color: var(--color-light);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#panel .user form .message-input{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+#panel .user form .message-input input{
+    width: 500px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 2px solid var(--color-text-light);
+    border-right: 0;
+    font-size: 15px;
+    transition: all .4s ease-in;
+}
+
+#panel .user form .message-input input:focus{
+    border-color: var(--color-principal);
+}
+
+#panel .user form .message-input button{
+    width: 75px;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid var(--color-principal);
+    border-left: 0;
+    background-color: #661141;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+
+#panel .user form .message-input button:hover{
+    background-color: var(--color-alternative);
+}
+
+#panel .user form .message-input input:focus,
+#panel .user form .message-input input:active,
+#panel .server textarea:focus,
+#panel .server textarea:active{
+    outline: none;
+    text-decoration: none;
+}
